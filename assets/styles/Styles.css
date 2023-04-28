@@ -1,0 +1,48 @@
+header {
+    width: 100%;
+    height: 60px;
+    box-shadow: 5px 5px 8px;
+    position: relative;
+}
+header > nav{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+header > nav:last-child{
+    right: 0;
+}
+header > nav:last-child a{
+    color: black;
+}
+
+header > nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: cornflowerblue;
+}
+
+header > nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+h2{
+    color: darkslategrey;
+}
+.fom,.aa{
+    background-color: #eceff1;
+    border-top: #cfd8dc solid 1px;
+    border-bottom: #cfd8dc solid 1px;
+}
+@media all and (max-width:800px) {
+    .col-6{
+    }
+}
+.float-left {
+    float: left !important;
+}
