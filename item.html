@@ -2,91 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Item Manage</title>
+    <title>Title</title>
     <link rel="stylesheet" href="assets/styles/Styles.css">
-    <link rel="stylesheet" href="assets/fontsAwesome/css/all.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <img class="float-left" height="55px" src="assets/images/rsz_logo.png" alt="logo image">
-            <li><h2>Uresha POS System</h2></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="order.html">Orders</a></li>
-            <li><a href="item.html">Items</a></li>
-            <li><a href="customer.html">Customers</a></li>
-        </ul>
-    </nav>
-    <nav>
-        <ul>
-            <li><i class="fa-solid fa-user-plus"></i> <a href="">Sign Up</a></li>
-            <li><i class="fa-solid fa-right-from-bracket"></i> <a href="">Sign Out</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <div class="container mt-4">
-        <div class="bg-light main-title mb-0">
-            <h2><i class="fas fa-cubes"></i> Items</h2>
-        </div>
-        <div class="aa">
-            Home > <b>Items</b>
-        </div>
-        <div class="fom pt-4 pb-4 ">
-            <div class="row ps-4">
-                <div class="col-lg-6">
-                    <div class="card ">
-                        <div class="card-header bg-success text-white" >Item Search</div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Input Item Name/Code Here">
-                            </div>
-                            <div class="form-group d-flex mt-3">
-                                <button class="btn btn-success mb-2">Search</button>
-                                &nbsp;&nbsp;&nbsp;
-                                <select class="form-control mb-2 w-auto">
-                                    <option>Item Name</option>
-                                    <option>Item Code</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-action-buttons m-3">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-danger">Delete</button>
-                            <button type="button" class="btn btn-warning">Update</button>
-                            <button type="button" class="btn btn-info">Details</button>
-                            <button type="button" class="btn btn-success">Clear</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex align-content-center" >
-                    <div class="center-on-lg ">
-                        <div class="btn-group float-right mt-lg-0 mb-3 ps-lg-5">
-                            <button type="button" class="btn btn-info text-white">New Item</button>
-                            <button type="button" class="btn btn-warning">View All Items</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 mt-4 d-block ps-0" style="height:180px; overflow-y: scroll;">
-                    <table class="table table-bordered">
-                        <thead style="background: seagreen; color: white">
-                        <tr>
-                            <th>Item Name</th>
-                            <th>Description</th>
-                            <th>Quantity</th>
-                            <th>price</th>
-                        </tr>
-                        </thead>
-                        <tbody class="bg-light">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+    <div>
+        <h1> My POS System</h1>
+        <a href="customer.html" class="btns"  id="Customer" >Customer</a>
+        <a href="order.html" class="btns"  id="Order">Order </a>
+        <a href="item.html" class="btns"  id="Item"  >Item </a>
+
     </div>
+</header>
+<h1></h1>
+<a href="customer.html" class="btns2" >Customer</a>
+<a href="order.html" class="btns2" >Order </a>
+<a href="item.html" class="btns2"  >Item </a>
+<main class="myMane">
+    <h1>Item Management</h1>
+    <form class="row g-3" id="myform">
+        <div class="col-md-6">
+            <label class="form-label">Item Code</label>
+            <input type="text" class="form-control" id="itemCode">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Description</label>
+            <input type="text" class="form-control" id="des">
+        </div>
+        <div class="col-6">
+            <label class="form-label">Unit Price</label>
+            <input type="text" class="form-control" id="unitPrice" placeholder="Rs 125.00">
+        </div>
+        <div class="col-6">
+            <label class="form-label">Qty On Hand </label>
+            <input type="tel" class="form-control" id="qty" placeholder="123">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-outline-danger">Save</button>
+            <button type="submit" class="btn btn-outline-secondary">Update</button>
+            <button type="submit" class="btn btn-outline-success">Delete</button>
+        </div>
+    </form>
+    <br>
+    <form class="d-flex" role="search" >
+        <input class="form-control me-2 was-validated " type="search" placeholder="Search" aria-label="Search" id="search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <br>
+    <form class="row g-3 p-2">
+        <table class="table">
+            <thead>
+            <th>Item Code</th>
+            <th>Description</th>
+            <th>Unit Price</th>
+            <th>Qty On Hand</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td>IT-0001</td>
+                <td>Red Rice</td>
+                <td>2000</td>
+                <td>100KG</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </form>
 </main>
 </body>
 </html>
